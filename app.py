@@ -86,7 +86,7 @@ def update_graphs(selected_years):
         for year in selected_years:
             year_df = filtered_df[filtered_df['AÑO'] == year]
             valid_coords = year_df.dropna(subset=['Latitud', 'Longitud'])
-            map_fig.add_trace(go.Scattermap(
+            map_fig.add_trace(go.Scattermapbox(
                 lat=valid_coords['Latitud'],
                 lon=valid_coords['Longitud'],
                 mode='markers',
