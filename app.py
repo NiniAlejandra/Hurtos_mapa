@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 import os
 
 # Cargar el archivo CSV
-df = pd.read_csv('hurtos_marzo.csv')
+df = pd.read_csv('Hurtos_marzo.csv')
 
 # Inicializar la aplicación Dash
 app = dash.Dash(__name__)
